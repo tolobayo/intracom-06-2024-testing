@@ -44,11 +44,9 @@ const root = createRoot(document.body);
 root.render(
   <div className="App">
     <header className="App-header">
-
       <p style={{ fontWeight: 800 }}>Are you ready for Project Ascend?!</p>
       <p>Launching Soon!</p>
     </header>
     <CountdownTimer />
-  </div>
-
+  </div>,
 );
