@@ -1,8 +1,8 @@
 module.exports = {
   projects: [
     {
-      runner: "@kayahr/jest-electron-runner/main",
-      testEnvironment: "node",
+      runner: "@kayahr/jest-electron-runner",
+      testEnvironment: "@kayahr/jest-electron-runner/environment",
     },
   ],
 };
