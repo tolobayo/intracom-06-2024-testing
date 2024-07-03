@@ -10,9 +10,13 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
-    "format": "prettier --write \"**/*.{html,css,js,jsx,ts,tsx,js,md,mdx,css,yaml}\""
+    "format": "prettier --write \"**/*.{html,css,js,jsx,ts,tsx,js,md,mdx,css,yaml}\"",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@electron-forge/cli": "^7.4.0",
     "@electron-forge/maker-deb": "^7.4.0",
     "@electron-forge/maker-rpm": "^7.4.0",
@@ -22,11 +26,14 @@
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron-forge/plugin-webpack": "^7.4.0",
     "@electron/fuses": "^1.8.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "babel-jest": "^29.7.0",
     "css-loader": "^6.0.0",
     "electron": "30.0.1",
     "eslint": "^8.0.1",
@@ -46,6 +53,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@kayahr/jest-electron-runner": "^29.14.0",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
